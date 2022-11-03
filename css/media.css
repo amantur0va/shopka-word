@@ -1,0 +1,316 @@
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+  .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 35rem;
+    top: 44px;
+  }
+  .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 48.7rem;
+    top: 44px;
+  }
+}
+@media (max-width: 1200px) {
+  #all .all--first {
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(58, 58, 68, 0.24), 0 2px 4px rgba(90, 91, 106, 0.24);
+    border-radius: 8px;
+    margin: 25px 7px;
+  }
+  #all .all--first__show {
+    width: 893px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 29.9rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 43rem;
+    top: 44px;
+  }
+}
+@media (max-width: 1024px) {
+  #header .header--nav a {
+    display: none;
+  }
+  #hero .hero--block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #all .all--first__labels button {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 10px;
+    color: #4A4B57;
+    border-radius: 99px;
+    border: none;
+  }
+  #all .all--first__show--select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 956px;
+    flex-direction: column;
+    padding: 8px;
+  }
+  #all .all--first__show--select__op {
+    margin: 10px 0;
+  }
+  #all .all--first__show--select__bb {
+    margin: 10px 0;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 23.9rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 37.8rem;
+    top: 44px;
+  }
+  #all .all--first__show {
+    width: 737px;
+  }
+}
+@media (max-width: 992px) {
+  #all .all--first__show {
+    width: 720px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 22.9rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 36.8rem;
+    top: 44px;
+  }
+}
+@media (max-width: 820px) {
+  #all .all--first__show {
+    width: 525px;
+  }
+  #all .all--first__labels {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #all .all--first__labels button {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 10px;
+    color: #4A4B57;
+    border-radius: 99px;
+    border: none;
+    margin: 3px 0;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 19.6rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 33.3rem;
+    top: 44px;
+  }
+}
+@media (max-width: 768px) {
+  #all .all--first__show {
+    width: 507px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 18.3rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 32.3rem;
+    top: 44px;
+  }
+}
+@media (max-width: 620px) {
+  #all .all--first__show {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 365px;
+  }
+  #header .header--nav__btn button {
+    padding: 8px 11px;
+  }
+  #header .header--nav__input input {
+    padding: 5px 11px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 29.3rem;
+    top: 44px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 19rem;
+    top: 44px;
+  }
+  #header .header--nav h1 {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  #all .all--first__show {
+    width: 275px;
+  }
+  #all .all--first__show--select__bn {
+    margin-left: 5px;
+  }
+  #all .all--first__show--select__bn button {
+    padding: 10px 9px;
+  }
+  #header .header--nav__btn button {
+    padding: 8px 7px;
+  }
+  #all .all--first__show--select__op {
+    margin: 10px 50px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 15.4rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 25.9rem;
+    top: 44px;
+  }
+}
+@media (max-width: 468px) {
+  #all .all--snake__cell--now button {
+    font-size: 17px;
+    padding: 8px 0;
+  }
+  #all .all--snake__cell .navigation {
+    min-width: 180px;
+    margin-left: -18px;
+  }
+  #all .all--snake__cell--now svg {
+    margin: 0 0 0 -15px;
+  }
+  #header .header--nav__btn button {
+    padding: 8px 4px;
+  }
+  #header .header--nav__input {
+    margin: 0 5px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 13.4rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 23.9rem;
+    top: 44px;
+  }
+  #all .all--snake__cell .accordion__link {
+    font-size: 0.8rem;
+    padding: 12px 46px 10px 22px;
+  }
+  #all .all--first__show {
+    width: 245px;
+  }
+}
+@media (max-width: 320px) {
+  #all .all--first__show--select select {
+    padding: 10px 3px;
+    font-size: 13px;
+  }
+  #header .header--nav ul {
+    width: 7%;
+  }
+  #all .all--first__show--select__op {
+    margin: 10px 22px;
+  }
+  #all .all--first__show {
+    width: 175px;
+  }
+  #all .all--first__show--select__bn button {
+    padding: 10px 1px;
+  }
+  #all .all--snake__cell .navigation {
+    min-width: 91px;
+    margin-left: -22px;
+  }
+  #header .header--nav__btn button {
+    display: none;
+  }
+  #all .all--first__image {
+    padding-left: 0;
+  }
+  #all .all--first__image--im__star span {
+    font-size: 10px;
+  }
+  #all .all--first__image--im__star p {
+    font-size: 13px;
+  }
+  #all .all--first__image--im img {
+    width: 80%;
+  }
+  #all .all--first__image--im__star h1 {
+    font-size: 22px;
+  }
+  #header .header--nav__input--icon {
+    position: absolute;
+    z-index: 1;
+    right: 2.9rem;
+    top: 44px;
+  }
+  #header .header--nav__input--ion {
+    position: absolute;
+    z-index: 1;
+    right: 13rem;
+    top: 44px;
+  }
+  #all .all--first__image--im__star--bl ion-icon {
+    margin-left: -3px;
+  }
+  #all .all--snake__cell .accordion__link {
+    padding: 12px 40px 10px 24px;
+  }
+  #all .all--first__image--im__star--bl__end button {
+    margin-left: 2px;
+    padding: 6px 7px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

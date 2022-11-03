@@ -1,0 +1,40 @@
+@mixin df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btn {
+  font-weight: 700;
+  font-size: 20px;
+  color: #2264D1;
+  border: 1px solid #9DC2FF;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: .4s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: none;
+  }
+
+}
+@mixin bn{
+  margin-left: 15px;
+  padding: 6px 20px;
+  background: #FFFFFF;
+  border: 1px solid #9DC2FF;
+  border-radius: 7px;
+  transition: .4s;
+  &:hover{
+    background: transparent;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+@mixin fe {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}

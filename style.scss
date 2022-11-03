@@ -1,0 +1,429 @@
+@import "reset";
+@import "mixin";
+@import "global";
+
+#header {
+  .header {
+    padding: 30px 0;
+
+    &--nav {
+      @include df;
+      //width: 00px;
+      ul {
+        font-weight: 700;
+        font-size: 38px;
+        box-shadow: 0 10px 30px #3333a4;
+        width: 2%;
+        color: #fff;
+        background: blue;
+        border-radius: 10px;
+        padding: 0 15px;
+      }
+
+      h1 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        color: #0C2146;
+        //padding-left: -60px;
+      }
+
+      a {
+        color: #5A5B6A;
+
+        &:hover {
+          color: #2264D1;
+        }
+      }
+
+      &__input {
+        margin: 0 20px;
+
+        input {
+          position: relative;
+          background: #EDEDF0;
+          border-radius: 15px;
+          padding: 5px 40px;
+          border: none;
+        }
+
+        &--ion {
+          position: absolute;
+          z-index: 1;
+          right: 47rem;
+          top: 44px;
+        }
+
+        &--icon {
+          position: absolute;
+          z-index: 1;
+          right: 33rem;
+          top: 44px;
+        }
+      }
+
+      &__btn {
+        button {
+          //padding: 10px 30px;
+          @include btn();
+          margin: 0 5px;
+
+        }
+      }
+
+    }
+
+
+  }
+}
+
+#hero {
+  .hero {
+
+    &--block {
+      @include fe();
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #EBF2FF;
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          color: #2979FF;
+          padding: 7px 0;
+
+        }
+      }
+
+
+      &__blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          color: #787885;
+          padding: 7px 0;
+          transition: .4s;
+
+          &:hover {
+            color: #2979FF;
+            transform: scale(1.1);
+            cursor: pointer;
+          }
+        }
+      }
+
+
+    }
+
+  }
+}
+
+#all {
+  .all {
+    display: flex;
+
+    &--snake{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 40px;
+
+      &__cell {
+        display: flex;
+        flex-direction: column;
+
+
+        &--now {
+          button {
+            @include btn;
+            background: none;
+            padding: 10px 30px;
+            //margin: 0 10px;
+          }
+
+          svg {
+            margin: 0 0 0 -45px;
+            padding: 0 20px;
+          }
+        }
+
+        .navigation {
+          max-width: 460px;
+          min-width: 216px;
+          color: #696666;
+          margin-left: -11px;
+          padding-top: 20px;
+        }
+
+        .accordion {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          &__item {
+            background: #e7e7e7;
+            border-radius: 20px;
+            margin-bottom: 5px;
+          }
+
+          &__item:nth-child(odd) > :first-child:not(&__link_active) {
+            color: #ffffff;
+            background: #696666;
+          }
+
+          &__link {
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            color: #696666;
+            text-decoration: none;
+            border-radius: 20px;
+            display: block;
+            padding: 12px 50px 12px 20px;
+          }
+
+          &__link:not(&__link_active):after {
+            position: absolute;
+            content: "";
+            border-top: 12px #ff8663 solid;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            right: 22px;
+            top: 50%;
+            transform: translatey(-6px);
+          }
+
+          &__link:not(&__link_active):hover {
+            opacity: .8;
+            color: #fff;
+            background: #B8B8B8;
+          }
+
+          &__link:not(&__link_active):hover:after {
+            border-top: 12px #ffffff solid;
+          }
+
+          &__link_active {
+            color: #ffffff;
+            background-color: #ff8663;
+          }
+
+          &__link_active:after {
+            position: absolute;
+            content: "";
+            border-bottom: 12px #fff solid;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            right: 22px;
+            top: 50%;
+            transform: translatey(-6px);
+          }
+
+          &__link_active + ul {
+            display: block;
+            height: 100%;
+          }
+        }
+
+        .sub-accordion {
+          margin: 0;
+          list-style: none;
+          padding: 5px 20px;
+          display: none;
+          height: 0;
+          overflow: hidden;
+
+          &__item {
+            padding: 5px 0;
+          }
+        }
+
+
+      }
+    }
+  }
+
+  .all--first {
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(58, 58, 68, 0.24), 0 2px 4px rgba(90, 91, 106, 0.24);
+    border-radius: 8px;
+    margin: 25px 30px;
+
+    &__show {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 992px;
+
+      &--select {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 985px;
+
+        select {
+          padding: 10px 15px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #19191D;
+          border-radius: 10px;
+          margin: 0 2px;
+          outline: none;
+        }
+
+        &__op {
+          select {
+            font-weight: 400;
+            font-size: 14px;
+            color: #787885;
+          }
+
+
+        }
+
+        &__bn {
+          display: flex;
+          margin-left: 30px;
+
+          button {
+            font-weight: 400;
+            font-size: 14px;
+            color: #5A5B6A;
+            background: #EBF2FF;
+            border-radius: 4px;
+            padding: 10px 20px;
+            border: none;
+            transition: .4s;
+
+            &:hover {
+              color: #2264D1;
+              background: #FFFFFF;
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+          }
+
+
+        }
+
+        &__bb {
+          display: flex;
+          margin-left: 15px;
+
+          button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #EBF2FF;
+            border: none;
+            transition: .4s;
+
+            &:hover {
+              color: #2264D1;
+              background: #FFFFFF;
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+          }
+
+
+        }
+      }
+
+    }
+
+    &__labels {
+      padding-top: 20px;
+      @include df;
+
+      h1 {
+        font-weight: 500;
+        font-size: 14px;
+        color: #19191D;
+        padding: 0 7px;
+      }
+
+      button {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 8px 20px;
+        color: #4A4B57;
+        border-radius: 99px;
+        border: none;
+
+      }
+    }
+
+    &__image {
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &--im {
+        //background: blue;
+        margin: 10px 0;
+
+        &__star {
+          padding: 10px;
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #19191D;
+          }
+
+          h1 {
+            font-weight: 700;
+            font-size: 24px;
+            padding: 6px 0;
+            color: rgba(0, 0, 0, 0.87);
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            color: #787885;
+          }
+
+          &--bl {
+            display: flex;
+            padding-top: 10px;
+            ion-icon {
+              color: yellow;
+            }
+
+            &__end {
+              button {
+        @include bn;
+              }
+              ion-icon{
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
