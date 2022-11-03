@@ -293,31 +293,37 @@
   #all .all--first__image--im__star p {
     font-size: 13px;
   }
-  #all .all--first__image--im img {
+  #all .all--snake__cell .accordion__link {
+    padding: 9px 1px 6px 22px;
+    font-size: 10px;
+    width: 99px;
+    margin-left: 6px;
+  }
+  #all .all--snake__cell .accordion__link #all .all--first__image--im img {
     width: 80%;
   }
-  #all .all--first__image--im__star h1 {
+  #all .all--snake__cell .accordion__link #all .all--first__image--im__star h1 {
     font-size: 22px;
   }
-  #header .header--nav__input--icon {
+  #all .all--snake__cell .accordion__link #header .header--nav__input--icon {
     position: absolute;
     z-index: 1;
     right: 2.9rem;
     top: 44px;
   }
-  #header .header--nav__input--ion {
+  #all .all--snake__cell .accordion__link #header .header--nav__input--ion {
     position: absolute;
     z-index: 1;
     right: 13rem;
     top: 44px;
   }
-  #all .all--first__image--im__star--bl ion-icon {
+  #all .all--snake__cell .accordion__link #all .all--first__image--im__star--bl ion-icon {
     margin-left: -3px;
   }
-  #all .all--snake__cell .accordion__link {
+  #all .all--snake__cell .accordion__link #all .all--snake__cell .accordion__link {
     padding: 12px 40px 10px 24px;
   }
-  #all .all--first__image--im__star--bl__end button {
+  #all .all--snake__cell .accordion__link #all .all--first__image--im__star--bl__end button {
     margin-left: 2px;
     padding: 6px 7px;
   }
